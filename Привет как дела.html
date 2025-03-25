@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiring Message</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee); /* Романтичный градиент розового и голубого */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-size: 6rem; /* увеличенный размер */
+            opacity: 0;
+            animation: fadeIn 4s forwards;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 5rem;
+            font-style: italic;
+            animation-delay: 3s; /* Появляется позже */
+        }
+
+        /* Анимация появления текста */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-weight: bold;
+            color: #ff69b4; /* Розовый цвет для первой надписи */
+            text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9); /* Более выраженная тень */
+        }
+
+        h2 {
+            color: #ffb6c1; /* Нежный розовато-голубой цвет для второй надписи */
+            text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9); /* Более выраженная тень */
+        }
+
+        /* Анимация фона */
+        @keyframes backgroundAnimation {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 400% 0;
+            }
+        }
+
+        /* Добавление движения фона */
+        body {
+            animation: backgroundAnimation 10s linear infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>It's gonna be ok</h1>
+    <h2>I believe in you</h2> <!-- Вторая надпись -->
+</body>
+</html>
